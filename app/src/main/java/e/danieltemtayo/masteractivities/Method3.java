@@ -20,13 +20,14 @@ public class Method3 extends AppCompatActivity {
         relativeLayout = findViewById(R.id.relative);
         button = findViewById(R.id.button1);
         button2 = findViewById(R.id.button2);
-
     }
+
     public void changeToGreen(View view) {
         relativeLayout.setBackgroundColor(Color.RED);
     }
 
-    public void changeColor(View view) {
+    public void changeColor(View view)
+    {
         relativeLayout.setBackgroundColor(Color.YELLOW);
     }
 }

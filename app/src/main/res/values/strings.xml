@@ -3,4 +3,10 @@
     <string name="first">first</string>
     <string name="second">second</string>
     <string name="next">next</string>
+    <string name="push">push</string>
+    <string name="exp">exp</string>
+    <string name="textview">TextView</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="login">LOGIN</string>
+    <string name="login_message">Login Message!</string>
 </resources>

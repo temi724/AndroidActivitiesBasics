@@ -16,7 +16,7 @@ public static final String TAG=MainActivity.class.getSimpleName();
 
 
     private RelativeLayout relativeLayout;
-    private Button button,button2,button3;
+    private Button button,button2,button3,button4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,13 +27,14 @@ public static final String TAG=MainActivity.class.getSimpleName();
         button=findViewById(R.id.button1);
         button2=findViewById(R.id.button2);
         button3=findViewById(R.id.button3);
+        button4=findViewById(R.id.button4);
 
         //setting the onclick listener
         //note. the (this) simply means in this context
         button.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
-
+        button.setOnClickListener(this);
     }
 //
     @Override
@@ -51,8 +52,12 @@ public static final String TAG=MainActivity.class.getSimpleName();
                 //Using intent to lunch an alternative activity
                 Intent intent= new Intent(this,Method_2.class);
                 startActivity(intent);
-
-        }
+                break;
+            case R.id.button4:
+                Intent intentA= new Intent(this,ExplicitIntent.class);
+                startActivity(intentA);
+                break;
+            }
     }
 
 
